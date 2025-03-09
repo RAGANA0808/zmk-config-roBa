@@ -40,6 +40,21 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        BT0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <22 28>;
+        };
+
+        BT1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <23 28>;
+        };
+
+        BT2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <24 28>;
+        };
     };
 
     macros {
