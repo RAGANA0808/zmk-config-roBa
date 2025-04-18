@@ -95,6 +95,34 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        home_row_mod_left: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <11 13 12>;
+        };
+
+        home_row_mod_right: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_MOD_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <18 19 20>;
+        };
     };
 
     keymap {
@@ -102,10 +130,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W            &kp E             &kp R             &kp T                                                             &kp Y        &kp U        &lt 5 I            &kp O            &lt 5 P
-&kp A      &mt RIGHT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F       &kp G        &kp ESCAPE                  &kp MINUS                &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp BACKSPACE
-&kp Z      &kp X            &kp C             &kp V             &kp B        &kp LC(LG(LEFT_ARROW))      &kp RG(RC(RIGHT_ARROW))  &kp N        &kp M        &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL  &kp LEFT_WIN     &kp LEFT_ALT      &lt 1 LEFT_SHIFT  &lt 2 SPACE  &lt 5 TAB                   &lt 6 ESC                &lt 1 ENTER                                                   &mkp MB1
+&kp Q      &kp W                           &kp E             &kp R             &kp T                                                             &kp Y        &kp U        &lt 5 I            &kp O            &lt 5 P
+&kp A      &home_row_mod_left RIGHT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F       &kp G        &kp ESCAPE                  &kp MINUS                &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &kp BACKSPACE
+&kp Z      &kp X                           &kp C             &kp V             &kp B        &kp LC(LG(LEFT_ARROW))      &kp RG(RC(RIGHT_ARROW))  &kp N        &kp M        &kp COMMA          &kp DOT          &kp SLASH
+&kp LCTRL  &kp LEFT_WIN                    &kp LEFT_ALT      &lt 1 LEFT_SHIFT  &lt 2 SPACE  &lt 5 TAB                   &lt 6 ESC                &lt 1 ENTER                                                   &mkp MB1
             >;
 
             sensor-bindings = <&scroll_up_down>;
