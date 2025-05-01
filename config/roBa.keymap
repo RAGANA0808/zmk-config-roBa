@@ -131,7 +131,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W                           &kp E                            &kp R                       &kp T                                                             &kp Y        &kp U                        &lt 5 I                            &kp O                            &lt 5 P
-&kp A      &home_row_mod_left RIGHT_ALT S  &home_row_mod_left LEFT_SHIFT D  &home_row_mod_left LCTRL F  &kp G        &kp ESCAPE                  &kp MINUS                &kp H        &home_row_mod_right RCTRL J  &home_row_mod_right RIGHT_SHIFT K  &home_row_mod_right RIGHT_ALT L  &kp BACKSPACE
+&kp A      &home_row_mod_left RIGHT_ALT S  &home_row_mod_left LEFT_SHIFT D  &home_row_mod_left RCTRL F  &kp G        &kp ESCAPE                  &kp MINUS                &kp H        &home_row_mod_right RCTRL J  &home_row_mod_right RIGHT_SHIFT K  &home_row_mod_right RIGHT_ALT L  &kp BACKSPACE
 &kp Z      &kp X                           &kp C                            &kp V                       &kp B        &kp LC(LG(LEFT_ARROW))      &kp RG(RC(RIGHT_ARROW))  &kp N        &kp M                        &kp COMMA                          &kp DOT                          &kp SLASH
 &kp LCTRL  &kp LEFT_WIN                    &kp RIGHT_ALT                    &lt 1 LEFT_SHIFT            &lt 2 SPACE  &lt 5 TAB                   &lt 6 ESC                &lt 1 ENTER                                                                                                   &mkp MB1
             >;
