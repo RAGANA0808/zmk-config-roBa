@@ -58,6 +58,11 @@
             bindings = <&bt BT_SEL 2>;
             key-positions = <24 28>;
         };
+
+        BT3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <25 28>;
+        };
     };
 
     macros {
